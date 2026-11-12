@@ -1,0 +1,21 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+
+# Dependencies
+node_modules/
+backend/node_modules/
+
+# Local database
+backend/data/*
+!backend/data/bookings.js
+!backend/data/stations.js
+!backend/data/trains.js
+
+# Logs
+*.log
+npm-debug.log*
+.DS_Store

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PNR Enquiry</title>
+    <link rel="stylesheet" href="pnr_styles.css" />
+      <link rel="stylesheet" href="site-header.css" />
+  </head>
+  <body>
+    <header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="index-irctc.html" aria-label="Indian Railways home">
+      <img
+        class="site-brand-logo"
+        src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"
+        alt="IRCTC Indian Railways logo"
+      />
+      <span class="site-brand-text">
+        <strong>INDIAN RAILWAYS</strong>
+        <small>Passenger Services</small>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="nav-links">
+        <a href="index-irctc.html">Home</a>
+        <a href="indian_railway_enquiry.html">Indian Railways Enquiry</a>
+        <a href="pnr_enquiry.html">PNR Enquiry</a>
+        <a href="reserved_train_btw_stations.html">Reserved Train Between Stations</a>
+        <a href="seat_availabilty.html">Seat Availability</a>
+        <a href="reserved_train_schedule.html">Reserved Train Schedule</a>
+        <a href="fare_enquiry.html">Fare Enquiry</a>
+      </div>
+      <div id="auth-nav" class="auth-nav">
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Log In</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <img
+        src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"
+        alt="Indian Railway Logo"
+        class="logos"
+      />
+      <h1>INDIAN RAILWAYS PNR ENQUIRY</h1>
+      <img
+        src="https://www.irctc.co.in/nget/assets/images/logo.png"
+        alt="IRCTC Logo"
+        class="logos"
+      />
+
+      <article class="pnr_details">
+        <h2>Check your PNR status here:</h2>
+
+        <form action="result_pnr_enquiry.html" class="user_pnr_details">
+          <label for="pnr-number"
+            >Enter PNR Number:
+            <input
+              required
+              type="text"
+              name="pnr-number"
+              id="pnr-number"
+              placeholder="eg:K9XR2P"
+            />
+          </label>
+
+          <button type="submit" id="check_status" name="check_status">
+            Check Status
+          </button>
+          <button type="reset">Reset</button>
+
+          <label for="captcha">Enter CAPTCHA:</label><br />
+
+          <div class="captcha-box" id="captchaBox"></div>
+
+          <input
+            type="text"
+            id="captcha"
+            name="captcha"
+            placeholder="Enter the code"
+          />
+          <button type="button" id="check_captcha" name="check_captcha">
+            Check Captcha
+          </button>
+        </form>
+      </article>
+    </main>
+        <script src="config.js"></script>
+    <script src="pnr.js"></script>
+    <script src="auth-nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Availability</title>
+    <link rel="stylesheet" href="seat_availabilty_styles.css">
+    <link rel="stylesheet" href="site-header.css" />
+  </head>
+<body>
+    <header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="index-irctc.html" aria-label="Indian Railways home">
+      <img
+        class="site-brand-logo"
+        src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"
+        alt="IRCTC Indian Railways logo"
+      />
+      <span class="site-brand-text">
+        <strong>INDIAN RAILWAYS</strong>
+        <small>Passenger Services</small>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="nav-links">
+        <a href="index-irctc.html">Home</a>
+        <a href="indian_railway_enquiry.html">Indian Railways Enquiry</a>
+        <a href="pnr_enquiry.html">PNR Enquiry</a>
+        <a href="reserved_train_btw_stations.html">Reserved Train Between Stations</a>
+        <a href="seat_availabilty.html">Seat Availability</a>
+        <a href="reserved_train_schedule.html">Reserved Train Schedule</a>
+        <a href="fare_enquiry.html">Fare Enquiry</a>
+      </div>
+      <div id="auth-nav" class="auth-nav">
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Log In</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <main>
+        <img src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png" alt="Indian Railway Logo" class="logos">
+        <h1>INDIAN RAILWAYS SEAT AVAILABILITY ENQUIRY </h1>
+        <img src="https://www.irctc.co.in/nget/assets/images/logo.png" alt="IRCTC Logo" class="logos">
+        
+        <div class="seat_availability_details">
+            <h2>Enter the following details:</h2>
+
+            <form  action="result_seat_availability.html"  class="seat-avail-details">
+
+                <label for="sa-train-number">Enter Train Number:
+                    <input required type="text" name="sa-train-number" id="sa-train-number" placeholder="eg:12951">
+                </label>
+
+                <label for="sa-source-station">Enter Source Station:
+                    <input required type="text" name="sa-source-station" id="sa-source-station" placeholder="eg: NDLS ">
+                </label>
+
+                <label for="sa-destination-station">Enter Destination Station:
+                    <input required type="text" name="sa-destination-station" id="sa-destination-station" placeholder="eg: MMCT ">
+                </label>
+
+                <label for="sa-journey-date">Enter Journey Date:
+                    <input required type="date" name="sa-journey-date" id="sa-journey-date" placeholder="2026-07-23">
+                </label>
+
+               <label for="sa-train-class" >Enter Class:
+                    <select id="sa-train-class" name="sa-train-class">
+                        <option value="all-classes">All Classes</option>
+                        <option value="sleeper">Sleeper</option>
+                        <option value="3ac">3 AC</option>
+                        <option value="2ac">2 AC</option>
+                        <option value="1ac">1 AC</option>
+                    </select>
+                </label>
+
+                <label for="sa-train-quota" >Enter Quota:
+                    <select id="sa-train-quota" name="sa-train-quota">
+                        <option value="general">General</option>
+                        <option value="ladies">Ladies</option>
+                        <option value="sr-citizen">Lower Berth/Sr.Citizen</option>
+                        <option value="duty-pass">Duty Pass</option>
+                        <option value="tatkal">Tatakl</option>
+                        <option value="prem-tatkal">Premium Tatakl</option>
+                    </select>
+                </label>
+
+                
+                <button type="submit" id="check_seat_avail" name="check_seat_avail">Check Availability</button>
+                
+
+                <button type="reset" id="reset_seat" name="reset_seat">Reset</button>
+           </form>
+        </main>
+    <script src="config.js"></script>
+    <script src="common.js"></script>
+    <script src="seat_availability.js"></script>
+    <script src="auth-nav.js"></script>
+  </body>
+</html>
