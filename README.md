@@ -42,15 +42,15 @@ This project was developed as a collaborative web development project to underst
 
 You can access the different pages of the project below:
 
-| Page | Description |
-|------|-------------|
-| 🏠 [Home Page](index-irctc.html) | Main railway enquiry homepage |
-| 🎫 [PNR Enquiry](pnr_enquiry.html) | Check passenger PNR information |
+| Page                                                          | Description                        |
+| ------------------------------------------------------------- | ---------------------------------- |
+| 🏠 [Home Page](index-irctc.html)                              | Main railway enquiry homepage      |
+| 🎫 [PNR Enquiry](pnr_enquiry.html)                            | Check passenger PNR information    |
 | 🚆 [Train Between Stations](reserved_train_btw_stations.html) | Search trains between two stations |
-| 💺 [Seat Availability](result_seat_availability.html) | Check available seats |
-| 💰 [Fare Enquiry](fare_enquiry.html) | Enquire about train fares |
-| 📅 [Reserved Train Schedule](reserved_train_schedule.html) | View reserved train schedules |
-| 🚆 [Indian Railway Enquiry](indian_railway_enquiry.html) | Railway enquiry section |
+| 💺 [Seat Availability](result_seat_availability.html)         | Check available seats              |
+| 💰 [Fare Enquiry](fare_enquiry.html)                          | Enquire about train fares          |
+| 📅 [Reserved Train Schedule](reserved_train_schedule.html)    | View reserved train schedules      |
+| 🚆 [Indian Railway Enquiry](indian_railway_enquiry.html)      | Railway enquiry section            |
 
 ---
 
@@ -118,3 +118,7 @@ IRCTC-Website-project/
 ├── result_seat_styles.css
 │
 └── README.md
+
+# IRCTC-Demo-Site
+IRCTC-inspired railway enquiry and booking platform built with HTML, CSS, JavaScript, Node.js, Express.js, and SQLite. Features include train search, PNR status, live train tracking, schedule and availability enquiries, and secure user authentication.
+```
